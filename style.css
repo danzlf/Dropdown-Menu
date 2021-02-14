@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #93dbec;
+  padding: 10px 5%;
+  height: 9vh;
+  width: 100%;
+  box-shadow: #058ad1 0 1px 5px;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #0570aa;
+  cursor: pointer;
+}
+
+.nav-link {
+  display: inline-flex;
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #045e8f;
+  margin: 0 30px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+li a:hover {
+  color: #ffffff;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #3c9dd1;
+  border-radius: 3px;
+  color: #ffffff;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+button:hover {
+  background-color: #0f7ab4;
+}
+
+.projects a {
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 30px;
+}
+
+.projects a:hover {
+  color: #ffffff;
+}
+
+.projects ul li a {
+  font-size: 13px;
+  color: #f3f3f3;
+}
+
+.projects ul {
+  position: absolute;
+  display: flex;
+  align-items: left;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin-top: 20px;
+  background-color: #058ad1;
+  height: 150px;
+  list-style: none;
+}
+
+.projects li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.projects li:hover {
+  background-color: #115377;
+}
+.about a {
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 30px;
+}
+.about a:hover {
+  color: #ffffff;
+}
+
+.about ul li a {
+  font-size: 13px;
+  color: #f3f3f3;
+}
+
+.about ul {
+  position: absolute;
+  display: flex;
+  align-items: left;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin-top: 20px;
+  background-color: #058ad1;
+  height: 150px;
+  list-style: none;
+}
+
+.about li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  cursor: pointer;
+}
+.about li:hover {
+  background-color: #115377;
+}
+
+.projects ul,
+.about ul {
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.projects a:focus + ul,
+.about a:focus + ul {
+  opacity: 1;
+  pointer-events: all;
+}
